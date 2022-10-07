@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="702.0" style="-fx-background-color: #002847;" stylesheets="@../css/formulario.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aragon.unam.mx.controlador.FormularioController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="702.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="59.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../recursos/logo.png" />
+               </image>
+            </ImageView>
+            <Label prefWidth="423.0" text="SOLICITUD CRÉDITO PERSONAL PUMA" textFill="#d98d0f">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="56.0" fitWidth="59.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../recursos/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="574.0" prefWidth="702.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="633.0" spacing="5.0" style="-fx-border-color: #AADAE4;">
+               <children>
+                  <Label text="Folio:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtNumFolio" prefHeight="16.0" prefWidth="132.0" promptText="Número de Folio">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Cliente:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtNumTrabajador" prefHeight="16.0" prefWidth="132.0" promptText="Número de Trabajador">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Fecha de Solicitud:" textFill="#f8f7f7" />
+                  <DatePicker fx:id="dtpFechaSolicitud" prefHeight="25.0" prefWidth="146.0" promptText="Fecha de Solicitud" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="19.0" prefWidth="633.0">
+               <children>
+                  <Label opacity="0.66" text="Información del Crédito" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="633.0" spacing="5.0" style="-fx-border-color: #AADAE4;">
+               <children>
+                  <Label text="Monto Solicitado:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtMontoSolicitar" prefHeight="24.0" prefWidth="110.0" promptText="Monto a solicitar">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Cuenta Cliente:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtNumCliente" prefHeight="24.0" prefWidth="104.0" promptText="Cuenta Cliente">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Plazo del Crédito" textFill="#f2f0f0" />
+                  <ComboBox fx:id="cbbPlazoMeses" prefHeight="25.0" prefWidth="122.0" promptText="Meses" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="19.0" prefWidth="633.0">
+               <children>
+                  <Label opacity="0.66" text="Información Personal" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <FlowPane hgap="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #AADAE4;" vgap="10.0">
+               <children>
+                  <Label text="Nombre(s)" textFill="#f2f0f0" />
+                  <TextField fx:id="txtNombre" prefHeight="24.0" prefWidth="110.0" promptText="Sin abreviaturas">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Apellido Paterno:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtApellidoPaterno" prefHeight="24.0" prefWidth="139.0" promptText="Sin abreviaturas">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Apellido Materno:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtApellidoMaterno" prefHeight="24.0" prefWidth="126.0" promptText="Sin abreviaturas">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Fecha de Nacimiento:" textFill="#f2f0f0" />
+                  <DatePicker fx:id="dtpFechaNacimiento" prefHeight="25.0" prefWidth="113.0" />
+                  <Label text="País de Nacimiento:" textFill="#f2f0f0" />
+                  <ComboBox fx:id="cbbPaisNacimiento" prefHeight="25.0" prefWidth="127.0" promptText="Pais" />
+                  <Label text="Nacionalidad:" textFill="#f2f0f0" />
+                  <ComboBox fx:id="cbbNacionalidad" prefHeight="25.0" prefWidth="127.0" promptText="Nacionalidad" />
+                  <RadioButton fx:id="rdbFeminino" contentDisplay="BOTTOM" mnemonicParsing="false" prefWidth="74.0" text="Femenino" textFill="#f5f0f0">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="grupoSexo" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rdbMasculino" mnemonicParsing="false" text="Masculino" textFill="#f5f3f3" toggleGroup="$grupoSexo" />
+                  <RadioButton fx:id="rdbAsalariado" mnemonicParsing="false" text="Asalariado" textFill="#f8f6f6">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="regimen" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rdbHonorarios" mnemonicParsing="false" text="Honorarios" textFill="#f5f0f0" toggleGroup="$regimen" />
+                  <Label text="RFC con homoclave:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtRFC" prefHeight="24.0" prefWidth="231.0" promptText="RFC con homoclave">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="CURP:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtCURP" prefHeight="24.0" prefWidth="229.0" promptText="CURP">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Separator prefWidth="120.0" visible="false" />
+                  <Label text="Grado de Estudios" textFill="#f2f0f0" />
+                  <ComboBox fx:id="cbbGradoEstudio" prefHeight="25.0" prefWidth="173.0" promptText="Grado Máximo" />
+                  <Label text="Teléfono de Casa:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtTelefonoCasa" prefHeight="24.0" prefWidth="167.0" promptText="Casa">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Separator prefWidth="120.0" visible="false" />
+                  <Label text="Teléfono de Celular" textFill="#f2f0f0" />
+                  <TextField fx:id="txtTelefonoCelular" prefHeight="24.0" prefWidth="167.0" promptText="Celular">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Estado Civil:" textFill="#f2f0f0" />
+                  <RadioButton fx:id="rdbSoltero" mnemonicParsing="false" text="Soltero(a)" textFill="#eeebeb">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="estadoCivil" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rdbCasado" mnemonicParsing="false" text="Casado(a)" textFill="WHITE" toggleGroup="$estadoCivil" />
+                  <RadioButton fx:id="rdbUnionLibre" mnemonicParsing="false" text="Unión Libre" textFill="#f2eded" toggleGroup="$estadoCivil" />
+                  <RadioButton fx:id="rdbDivorciado" mnemonicParsing="false" text="Divorciado(a)" textFill="#f5f5f5" toggleGroup="$estadoCivil" />
+                  <RadioButton fx:id="rdbSociedadConyugal" mnemonicParsing="false" text="Sociedad Conyugal" textFill="#f2f2f2" toggleGroup="$estadoCivil" />
+                  <RadioButton fx:id="rdbSeparacionBienes" mnemonicParsing="false" text="Seraparación de Bienes" textFill="#f5efef" toggleGroup="$estadoCivil" />
+                  <Separator prefWidth="200.0" />
+               </children>
+            </FlowPane>
+            <HBox alignment="CENTER_LEFT" prefHeight="19.0" prefWidth="633.0">
+               <children>
+                  <Label opacity="0.66" text="Información de Domicilio" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <FlowPane hgap="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #AADAE4;" vgap="10.0">
+               <children>
+                  <Label text="Tipo de Propiedad:" textFill="#f2f0f0" />
+                  <RadioButton fx:id="rdbPropia" mnemonicParsing="false" text="Propia" textFill="#f2f0f0">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="propiedad" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rdbRentada" mnemonicParsing="false" text="Rentada" textFill="#f8f5f5" toggleGroup="$propiedad" />
+                  <RadioButton fx:id="rdbHipotecada" mnemonicParsing="false" text="Hipotecada" textFill="#eeebeb" toggleGroup="$propiedad" />
+                  <RadioButton fx:id="rdbFamiliares" mnemonicParsing="false" text="De familiares" textFill="#f2eded" toggleGroup="$propiedad" />
+                  <Separator prefWidth="250.0" visible="false" />
+                  <Label text="Domicilio:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtDomicilio" prefHeight="24.0" prefWidth="322.0" promptText="Calle y número exterior e interior">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Colonia:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtColonia" prefHeight="24.0" prefWidth="139.0" promptText="Colonia">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Colonia/Municipio/Demarcación:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtColMunDem" prefHeight="24.0" prefWidth="249.0" promptText="Colonia/Municipio/Demarcación">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Ciudad:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtCiudad" prefHeight="24.0" prefWidth="189.0" promptText="Ciudad">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Estado:" textFill="#f2f0f0" />
+                  <ComboBox fx:id="cbbEstado" prefHeight="25.0" prefWidth="127.0" promptText="Estado" />
+                  <Label text="C.P:" textFill="#f2f0f0" />
+                  <TextField fx:id="txtCP" prefHeight="24.0" prefWidth="229.0" promptText="Código Postal">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+                  <Label text="Años de recidencia" textFill="#f2f0f0" />
+                  <TextField fx:id="txtAnosResidencia" prefHeight="24.0" prefWidth="85.0" promptText="Años">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </TextField>
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="702.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnVerificar" mnemonicParsing="false" onAction="#accionVerificar" text="Verificar" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,28 @@
+package estructuras.datos.parcial1;
+
+import fes.aragon.utilerias.dinamicas.pila.Pila;
+
+public class Encriptado {
+
+	public static void main(String[] args) {
+		
+		String cadena="Olimpia(da) de I(nfor)matica";
+		Pila<String> pila=new Pila<>();
+		String[] lista = cadena.split(" ");
+		int k=0;
+		
+		for (int i = 0; i < lista.length; i++) {
+			for(int j=0; j<lista[i].length(); j++) {
+				if(lista[i].charAt(j)=='(') {
+					System.out.println("Si entra");
+					k=j+1;
+					while(lista[i].charAt(k)==')') {
+						System.out.println("Si entra");
+						k++;
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+package fes.aragon.inicio;
+
+import fes.aragon.utilerias.dinamicas.pila.Pila;
+
+public class inicio3 {
+	public static void main(String[] args) {
+		Pila<String> pila = new Pila<>();
+		int i = 0;
+
+		String cadena = "45 * 11 - 10 + 80";
+		String[] simbolo = cadena.split(" ");
+
+		String simboloArriba = "";
+		String salida = "";
+
+		while (i < simbolo.length) {
+
+			if (!simbolo[i].equals("*") && !simbolo[i].equals("/") && !simbolo[i].equals("+")
+					&& !simbolo[i].equals("-")) {
+				salida += Integer.parseInt(simbolo[i]) + " ";
+
+			} else {
+
+				/*
+				 * try { while (!pila.estaVacia() && pila.precedencia(pila.elementoSuperior(),
+				 * simbolo[i])) { simboloArriba = pila.extraer(); salida += " " + simboloArriba;
+				 * 
+				 * } } catch (Exception e) { System.out.println(e.getMessage()); }
+				 */
+				pila.insertar(simbolo[i]);
+			}
+			i++;
+
+		}
+
+		while (!pila.estaVacia()) {
+			try {
+				simboloArriba = pila.extraer();
+				salida += " " + simboloArriba;
+
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
+		System.out.println(salida);
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;aragon.unam.mx.servicios.TestPropertyJavaFXDos.java&apos; to &apos;SocketDos.java&apos;&#x0D;&#x0A;- Original project: &apos;Binding&apos;&#x0D;&#x0A;- Original element: &apos;aragon.unam.mx.servicios.TestPropertyJavaFXDos.java&apos;&#x0D;&#x0A;- Renamed element: &apos;aragon.unam.mx.servicios.SocketDos.java&apos;" description="Rename compilation unit &apos;TestPropertyJavaFXDos.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;aragon.unam.mx.servicios{TestPropertyJavaFXDos.java" name="SocketDos.java" references="false" stamp="1656682969762" version="1.0"/>
+</session>

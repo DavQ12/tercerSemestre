@@ -1,0 +1,58 @@
+package estructuras.datos.parcial1;
+
+import palindromo.pila.Pila;
+
+public class Palindromo {
+	public static void main(String[] args) throws Exception {
+		String cad = "Dabale arroz a la zorra el abad", cad2 = "", cad3="";
+		
+		Pila<String> pila = new Pila<>();
+		cad=cad.toLowerCase();
+		String[] lista = cad.split(" ");
+		int j = 0, k = 0;
+		
+		for (int i = 0; i < lista.length; i++) {
+			System.out.println(lista[i]);
+			cad += lista[i];//para quitar los espacios
+		}
+
+		System.out.println("cad2: " + cad2);
+		
+		System.out.print("sep: ");
+		String sep[] = new String[cad2.length()];
+		for (int i = 0; i < cad2.length(); i++) {
+			sep[i] = String.valueOf(cad2.charAt(i));//cada letra se almacena en el arreglo
+			System.out.print(sep[i] + " ");
+		}
+		
+		System.out.println();
+		
+		
+		pila.borrar();
+		
+		//pila.insertar(cad2);
+		while (j < sep.length) {
+			pila.insertar(sep[j]);
+			j++;
+		}
+		
+		while(k<sep.length) {
+			
+			cad3=pila.extraer();
+			
+			if(!sep[k].equals(cad3)) {
+				pila.insertar(cad3);
+				System.out.println("No es un palindromo");
+				break;
+			}
+			k++;
+		}
+		
+		if(pila.estaVacia()) {
+			System.out.println("Es un palindromo");
+		}
+		
+	}
+	
+	
+}

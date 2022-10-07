@@ -1,0 +1,59 @@
+package estructuras.datos.parcial1;
+
+import palindromo.pila.Pila;
+
+public class Palindromo {
+	public static void main(String[] args) throws Exception {
+		String cad = "amana";
+		int j = 0, k = 0;
+		Pila<String> pila = new Pila<>();
+		cad=cad.toLowerCase();
+		String[] lista = cad.split(" ");
+		
+		cad="";//se limpia la cad para reutilizar
+		
+		for (int i = 0; i < lista.length; i++) {
+			System.out.println(lista[i]);
+			cad += lista[i];//para quitar los espacios
+		}
+
+		System.out.println("cad: " + cad);
+		
+		System.out.print("sep: ");
+		String sep[] = new String[cad.length()];
+		for (int i = 0; i < cad.length(); i++) {
+			sep[i] = String.valueOf(cad.charAt(i));//cada letra de la cadena se almacena en el arreglo
+			System.out.print(sep[i] + " ");
+		}
+		
+		System.out.println();
+		
+		
+		pila.borrar();
+		cad="";//se limpia la cad para reutilizar
+		while (j < sep.length) {
+			pila.insertar(sep[j]);//cada "String" del arreglo se almacena uno por uno
+			j++;
+		}
+		
+		while(k<sep.length) {
+			
+			cad=pila.extraer();//se extrae el ultimo elemento si o si
+			
+			if(!sep[k].equals(cad)) {//se evalua si "no" son iguales
+				pila.insertar(cad);//en caso de no ser el mismo se vuelve a ingresar el elemento antes sacado
+				break;//sale del while
+			}
+			k++;
+		}
+		
+		if(pila.estaVacia()) {
+			System.out.println("Es un palindromo");
+		}else {
+			System.out.println("No es un palindromo");
+		}
+		
+	}
+	
+	
+}

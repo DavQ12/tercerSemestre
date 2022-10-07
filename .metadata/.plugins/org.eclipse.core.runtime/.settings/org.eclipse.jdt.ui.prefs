@@ -1,0 +1,12 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Exception"><rhs name\="fes.aragon.excep.IndiceFueraDeRango"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="fes.aragon.excep.IndiceFueraDeRango"/></lhs><lhs name\="fes.aragon.excep.IndiceFueraDeRango"><rhs name\="fes.aragon.excep.IndiceFueraDeRango"/></lhs><lhs name\="Componentes.Computadora"><rhs name\="Componentes.Computadora"/></lhs><lhs name\="Numeros.ClaseNum"><rhs name\="Numeros.ClaseNum"/></lhs><lhs name\="fes.aragon.utilerias.dinamicas.listasimple.Nodo"><rhs name\="fes.aragon.utilerias.dinamicas.listasimple.Nodo"/></lhs><lhs name\="fes.aragon.utilerias.dinamicas.listasimple.ListaSimple"><rhs name\="fes.aragon.utilerias.dinamicas.listasimple.ListaSimple"/></lhs><lhs name\="fes.aragon.utilerias.dinamicas.listasimple.Contador"><rhs name\="fes.aragon.utilerias.dinamicas.listasimple.Contador"/></lhs><lhs name\="fes.aragon.utilerias.estaticas.Arreglos"><rhs name\="fes.aragon.utilerias.estaticas.Arreglos"/></lhs><lhs name\="SumaDeVectores.Atributos"><rhs name\="SumaDeVectores.Atributos"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Integer"/></lhs><lhs name\="fes.aragon.utilerias.dinamicas.pila.Pila"><rhs name\="fes.aragon.utilerias.dinamicas.pila.Pila"/></lhs><lhs name\="fes.aragon.utilerias.dinamicas.cola.Cola"><rhs name\="fes.aragon.utilerias.dinamicas.cola.Cola"/></lhs><lhs name\="fes.aragon.utilerias.dinamicas.listadoble.NodoDoble"><rhs name\="fes.aragon.utilerias.dinamicas.listadoble.NodoDoble"/></lhs><lhs name\="fes.aragon.utilerias.dinamicas.listadoble.ListaDoble"><rhs name\="fes.aragon.utilerias.dinamicas.listadoble.ListaDoble"/></lhs><lhs name\="fes.aragon.utilierias.dinamicas.listasimple.ListaSimple"><rhs name\="fes.aragon.utilierias.dinamicas.listasimple.ListaSimple"/></lhs></history>
+content_assist_number_of_computers=13
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;MetodoBisección&apos; to &apos;MetodoBiseccion&apos;&#x0D;&#x0A;- Original project: &apos;MetodosNuméricos&apos;&#x0D;&#x0A;- Original element: &apos;MetodosNuméricos/src/MetodoBisección&apos;&#x0D;&#x0A;- Renamed element: &apos;MetodosNuméricos/src/MetodoBiseccion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;MetodoBisección&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;MetodoBisección" name="MetodoBiseccion" qualified="false" references="true" stamp="1662600188889" textual="false" version="1.0"/>
+</session>

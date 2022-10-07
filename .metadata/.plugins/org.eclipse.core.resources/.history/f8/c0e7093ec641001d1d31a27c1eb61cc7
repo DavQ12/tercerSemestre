@@ -1,0 +1,71 @@
+package estructuras.datos.parcial1;
+
+import palindromo.pila.Pila;
+
+public class Palindromo {
+	public static void main(String[] args) throws Exception {
+		String cad = "roberto", cad2 = "";
+		
+		int indice = 0;
+		Pila<String> pila = new Pila<>();
+		
+		String[] lista = cad.split(" ");
+		int j = 0, k = 0;
+		
+		for (int i = 0; i < lista.length; i++) {
+			System.out.println(lista[i]);
+			cad2 += lista[i];//para quitar los espacios
+		}
+
+		System.out.println("cad2: " + cad2);
+		
+		System.out.print("sep: ");
+		String sep[] = new String[cad2.length()];
+		for (int i = 0; i < cad2.length(); i++) {
+			sep[i] = String.valueOf(cad2.charAt(indice));//cada letra se almacena en el arreglo
+			System.out.print(i+": "+sep[i] + " ");
+			indice++;
+		}
+		
+		System.out.println();
+		
+		
+		pila.borrar();
+
+		while (j < sep.length) {
+			pila.insertar(sep[j]);
+			System.out.println("pila: "+pila.elementoSuperior());
+			System.out.println("pila: "+pila.extraer());
+			j++;
+		}
+		
+		
+		if(pila.estaVacia()) {
+			System.out.println("pila: vacia");
+		}
+	}
+		/*
+		for (int i = 0; i < sep.length; i++) {
+			System.out.println(sep[i]+" = "+pila.elementoSuperior());
+			String array=sep[i], pila2=pila.elementoSuperior();
+			if(validar(array, pila2)) {
+				System.out.println("pila: "+pila.extraer()); 
+			}else {
+				System.out.println("No funciono :(");
+				break;
+			}
+			
+		}*/
+
+	
+	public static boolean validar(String a, String b) {
+		if(a.equals(b)) {
+			System.out.println("valid: "+a+" = "+b);
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+	
+}
